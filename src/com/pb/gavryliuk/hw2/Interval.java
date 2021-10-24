@@ -1,5 +1,4 @@
 package com.pb.gavryliuk.hw2;
-
 import java.util.Scanner;
 
 public class Interval {

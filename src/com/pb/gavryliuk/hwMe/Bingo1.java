@@ -1,0 +1,22 @@
+package com.pb.gavryliuk.hwMe;
+import java.util.Scanner;
+public class Bingo1 {
+    public static void main(String[] args) {
+
+        int UnknownNumber, UserNumber, TrysCount = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("ЗАДАЧА: Угадать число (от 0 до 100).");
+        UnknownNumber = (int)Math.floor(Math.random() * 100);
+        do {
+            TrysCount++;
+            System.out.print("Введите ваше число: ");
+            UserNumber = input.nextInt();
+            if (UserNumber > UnknownNumber)
+                System.out.println("Моё число меньше.");
+            else if (UserNumber < UnknownNumber) System.out.println("Моё число больше.");	else System.out.println("Вы угадали!");
+        } while (UserNumber != UnknownNumber);
+        System.out.println("Количество попыток: " + TrysCount);
+
+              }
+
+    }
